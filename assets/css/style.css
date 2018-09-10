@@ -13,6 +13,43 @@
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
 
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
@@ -492,15 +529,15 @@ a:focus {
 	color: white;
 }
 
-#newswrap i {
+/* #newswrap i {
 	font-size: 30px;
 	color: #bfc9d3;
 	padding-right: 25px;
-}
+} */
 
-#newswrap i:hover {
+/* #newswrap i:hover {
 	color: #00b3fe
-}
+} */
 
 
 .newscontainer h4{
@@ -543,15 +580,36 @@ a:focus {
 	background-color: blue;
 }
 .show-more {
-	width: 100px;
-	height: 70px;
-	color: #ffffff;
-	margin: 0 auto;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #ffffff;
+	margin: 40px auto 20px auto;
 	text-align: center;
+	padding: 7px;
+	border-radius: 20px;
+
+}
+
+.show-more > a {
+	color: #ffffff;
+	display: inline-block;
+	position: relative;
+	top: -9px;
+	left: 3px;
+}
+
+.show-more > i {
+	color: #ffffff ;
+	font-size: 24px ;
+	padding-right: 0px ;
 }
 
 
-
+.show-more-i {
+	position: relative !important;
+	top: 7px !important;
+	left: 5px !important;
+}
 
 /* Footer */
 #footerwrap {
